@@ -1,305 +1,919 @@
-/* Background Color */
 .bg-container {
-    background-color: #0d0d2d; 
-    padding: 30px 0;
-  }
-
-  /* Heading 1 */
-  .heading-1 {
-    font-size: 28px;
-    font-family: Futura;
-    color: rgb(175, 173, 175);
-  }
-
-  /* Heading 2 */
-  .heading-2 {
-    font-size: 38px;
-    font-family: playfair display;
-    color: rgb(212, 211, 213);
-  }
-
-  .span-element {
-    font-size: 34px;
-    font-family: sans-serif;
-    color: rgb(190, 188, 191);
-  }
-  
-  /* Video Style */
-  .video-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    height: auto;
-    cursor: pointer;
-  }
-  
-  video {
-    width: 80%;
-    
-    border: 5px solid #000;
-    border-radius: 10px;
-  }
-
-  .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    border: 3px solid white;
-    border-radius: 50%;
-    padding: 25px 30px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    user-select: none;
+  background-color: #0d0d2d; /* Set any color you like */
+  padding: 30px 0;
 }
 
-
-
-.play-button:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
-/* Hide button when video is playing */
-.video-container.playing .play-button {
-    display: none;
-}
-.carousel-1 {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-}
-  
-  /* Icons Style */
-  .icon {
-    width: 200px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    border-radius: 100px;
-    background-color: rgb(44, 44, 132);
-  }
-  
-  .icon:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Image Display Section */
-  #images-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  #images-container img {
-    display: none;
-    width: 80px;
-    height: auto;
-  }
-  
-  .paragraph {
-    font-size: 18px;
-    font-family: Futura;
-    color: rgb(175, 173, 175);
-  }
-
-  .real {
-    font-size: 38px;
-    color: aliceblue;
-    font-family: Bree serif;
-    justify-self: center;
-    margin-top: 200px;
-  }
-
-  .moments {
-    font-size: 22px;
-    color: rgb(134, 137, 139);
-    font-family: Roboto condensedS;
-    justify-self: center;
-  }
-
-  .finger {
-    font-size: 38px;
-    color: aliceblue;
-    font-family: Bree serif;
-    justify-self: center;
-    margin-bottom: 50px;
-    margin-top: -40px;
-  }
-
-  .line {
-    color: #8383a3;
-    height: 5px;
-  }
-
-  .bottom-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #202045;
-    align-items: center;
-    border: #8383a3 solid 5px;
-    padding: 25px;
-    margin-top: 30px;
-    
-    position: absolute; /* Or fixed, as needed */
-    width: 70%; /* Key: Make container only as wide as its contents */
-    animation: moveHorizontal 10s linear infinite;
-  }
-  @keyframes moveHorizontal {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: calc(100vw); /* Key: Move to the left edge */
-    }
-}
-
-  .image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .carousel-image {
-    height: 350px;
-    width: 100%;
-    
-  }
-  
-  .image-container {
-    display: flex;
-    
-  }
-
-  .moments-2{
-    font-size: 22px;
-    color: rgb(134, 137, 139);
-    font-family: Roboto condensedS;
-    margin-left: 40px;
-    margin-top: 400px;
-  }
-
-  .rare-2 {
-    font-size: 38px;
-    color: aliceblue;
-    font-family: Bree serif;
-    
-    margin-left: 40px;
-  }
-
-  .last-conatiner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 70px;
-  }
-
-  .image-13 {
-    height: 400px;
-    width: 300px;
-    margin: 10px;
-  }
-
-  .image-2 {
-    height: 400px;
-    width: 400px;
-    border-radius: 200px;
-  }
-
-  .heading-3 {
-    font-size: 18px;
-    color: aliceblue;
-    font-family: Bree serif;
-  }
-
-  .description {
-    font-size: 16px;
-    color: rgb(86, 143, 193);
-    font-family: Bree serif;
-  }
-.heritage {
+.first-container {
   display: flex;
-  flex-direction: row;
-  justify-self: center;
-}
-
-.heritage-1 {
-  color: antiquewhite;
-  font-family: bree serif;
-  font-size: 72px;
-}
-
-.heritage-image {
-  width: 72px;
-  height: 72px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.heritage-2 {
-  font-size: 72px;
-    color: rgb(134, 137, 139);
-    font-family: Roboto condensedS;
-}
-
-.pristine-container {
-  background-image: radial-gradient( #252562, #0d0d2d, #0d0d2d);
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 50%;
-  padding: 50px;
-  
-  
+  justify-content: center;
+  padding: 0px;
+  gap: 8px;
+ margin-top: 186px;
 }
 
-.pristine {
-  color: antiquewhite;
-  font-family: bree serif;
-  font-size: 32px;
-  align-self: center;
+/* Tanishq Diamonds */
+.tanishq-diamonds {
+width: 195px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.13em;
+text-transform: uppercase;
+
+color: #A2C4E2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 
-.pristine-para {
-  color: antiquewhite;
-  font-family: bree serif;
+/* Where every Natural Diamond tells a story */
+.Where-every-Natural-Diamond-tells-a-story {
+width: 550px;
+height: 82px;
+
+font-family: 'Abhaya Libre Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 94%;
+/* or 41px */
+text-align: center;
+letter-spacing: -0.01em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.video-container {
+  position: relative; /* Needed for absolute positioning of the overlay */
+  width: 100%; /* Adjust as needed */
+  margin-top: 100px; /* Center the video */
+  height: 400px;
+  overflow: hidden; /* Hide video overflow if it doesn't fit the container */
+}
+
+.video-container video {
+  width: 100%;
+  display: block; /* Prevents a small space below the video */
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.play-button {
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* Style the button as a play icon (example with a triangle) */
+  background-image: url("data:image/png;base64,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"); /* Or use a font icon like Font Awesome */
+  background-size: cover;
+}
+
+/* Hide controls initially if you're using a custom play button */
+.video-container video::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-container video::-moz-media-controls {
+  display: none !important;
+}
+
+.video-container video {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+ 
+.second-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  margin-top: 100px;
+  
+  width: 635px;
+  height: 68px;
+  
+  }
+  
+  /* Real is Rare. Real is Diamond */
+  .real-is-rare {
+  width: 635px;
+  height: 41px;
+  
+  font-family: 'Abhaya Libre Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 94%;
+  /* or 41px */
+  text-align: center;
+  letter-spacing: -0.01em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* A COMPANION TO SPECIAL MOMENTS */
+  .a-companion {
+  width: 358px;
+  height: 19px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  align-self: center;
-  margin-top: 10px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.13em;
+  
+  color: #A2C4E2;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+  
+  
+  .carousel-container {
+    position: relative;
+    width: 90%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.card-container {
+/* Carousel Images */
+.carousel {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+    justify-content: center;
+}
+
+.carousel-image {
+    width: 40%;
+    height: 402px;
+    display: none;
+    align-self: center;
+}
+
+/* Show First Image Initially */
+.carousel-image:first-child {
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.third-container {
+  margin-top: 50px;
+  
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  color: rgb(68, 67, 67);
+}
+
+/* Finger Rings */
+.finger-rings {
+
+margin-top: -35px;
+justify-self: center;
+
+font-family: 'Abhaya Libre Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 94%;
+/* identical to box height, or 34px */
+letter-spacing: -0.01em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+/* Group 1171282075 */
+.fourth-container {
+
+width: 646.55px;
+height: 285.87px;
+left: 321px;
+top: 1566px;
+
+}
+.ring-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(#000000,#0d0d2d,#0d0d2d);
+}
+
+.engagement-rings {
+  width: 192.18px;
+  height: 222.18px;
+  top: 1705.9px;
+  left: 321px;
+  margin-top: -30px;
+  transform: rotate(-43.79deg);
+}
+
+.rings-for-him {
+  width: 106.73px;
+  height: 106.73px;
+  top: 1631.72px;
+  left: 574px;
+  transform: rotate(3.25deg);
+}
+.platinum-rings {
+  width: 157.63px;
+  height: 157.63px;
+  top: 1597.28px;
+  left: 842.81px;
+  transform: rotate(37.68deg);
+}
+
+/* Engagement Rings */
+.engagement-rings-text {
+
+width: 86px;
+height: 36px;
+left: 421px;
+top: 1785px;
+
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+/* or 18px */
+display: flex;
+align-items: center;
+text-align: center;
+margin-top: -30px;
+color: #FFFFFF;
+}
+
+.him-rings-text {
+
+  /* Rings For Him */
+
+
+width: 66px;
+height: 36px;
+left: 627px;
+top: 1785px;
+
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+/* or 18px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+margin-top: 20px;
+
+  }
+.platinum-rings-text {
+  /* Platinum Rings */
+
+
+width: 84px;
+height: 36px;
+left: 815px;
+top: 1785px;
+
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+/* or 18px */
+display: flex;
+align-items: center;
+text-align: center;
+margin-top: -10px;
+color: #FFFFFF;
+
+
+}
+
+.marquee-container {
+  /* Group 1171282072 */
+
+  width: 1369px;
+  height: 160.83px;
+
+}
+
+.marquee-content {
+  width: 100%;
+  height: 160.83px;
+  background: linear-gradient(86.35deg, #354266 14.43%, #13192B 49.08%, #2F4170 83.43%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  position: absolute;
+white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Frame 1261158351 */
+.text-1-container {
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+
+width: 256px;
+height: 60px;
+left: 90px;
+top: 1948.83px;
+
+}
+
+/* 10,000+ */
+.text-1 {
+width: 137px;
+height: 38px;
+
+font-family: 'Abhaya Libre Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 94%;
+/* identical to box height, or 38px */
+letter-spacing: -0.01em;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+/* Name */
+.para-1 {
+width: 256px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* identical to box height, or 20px */
+letter-spacing: -0.01em;
+
+color: #A2C4E2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.marquee-image-1 {
+  width: 109px;
+  height: 64px;
+  top: 1949.83px;
+  left: 457px;
+}
+
+/* Frame 1261158352 */
+.text-2-container {
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+
+width: 268px;
+height: 60px;
+left: 759px;
+top: 1948.83px;
+
+}
+
+/* 15k onwards */
+.text-2 {
+width: 202px;
+height: 38px;
+
+font-family: 'Abhaya Libre Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 94%;
+/* identical to box height, or 38px */
+letter-spacing: -0.01em;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* Name */
+.para-2 {
+width: 268px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* identical to box height, or 20px */
+letter-spacing: -0.01em;
+
+color: #A2C4E2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.marquee-image-2 {
+  width: 149.86px;
+  height: 71.69px;
+  top: 1699px;
+  left: 1125.07px;
+  transform: rotate(-30deg);
+}
+/* Section Header */
+
+/* Auto layout */
+.fifth-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+margin-top: 100px;
+width: 609px;
+height: 68px;
+left: 91px;
+top: 2145.83px;
+
+}
+
+/* Explore your unfinished journey */
+.companion {
+width: 365px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.13em;
+text-transform: uppercase;
+
+color: #A2C4E2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+/* Continue from where you left */
+.captive {
+width: 609px;
+height: 41px;
+
+font-family: 'Abhaya Libre Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 94%;
+/* or 41px */
+text-align: center;
+letter-spacing: -0.01em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.carousel-container-2 {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.carousel-2 {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto; /* Enables scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.carousel-2::-webkit-scrollbar {
+  height: 8px; /* Custom scrollbar height */
+}
+
+.carousel-2::-webkit-scrollbar-track {
+  background: #13192B; /* Scrollbar track color */
+}
+
+.carousel-2::-webkit-scrollbar-thumb {
+  background: #354266; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.carousel-item {
+  min-width: calc(33.33% - 10px); /* 3 items per view */
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+
+.carousel-image-1 {
+  width: 419px;
+  height: 480px;
+}
+
+.carousel-image-2 {
+  width: 419px;
+  height: 480px;
+  border-radius: 250px;
+}
+
+/* Frame 1261158348 */
+
+/* Auto layout */
+.carousel-text-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 419px;
+height: 46px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+
+
+/* SOLITAIRES (258) */
+.solitares {
+width: 137px;
+height: 24px;
+
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+/* A captivating statement of elegance and sophistication */
+.captivating {
+width: 419px;
+height: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+
+color: #A2C4E2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* Group 8 */
+
+.sixth-container {
+width: 100%;
+height: 213px;
+margin-top: 100px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.sixth-heading {
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 140px;
+line-height: 165px;
+display: flex;
+
+color: #fefefe;
+}
+
+.sixth-image {
+  width: 177.5px;
+  height: 149.54px;
+  top: 2993px;
+  left: 566px;
+}
+.sixth-span {
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 120px;
+line-height: 165px;
+display: flex;
+
+color: #435468;
+}
+
+/* Frame 1261158348 */
+.seventh-container {
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0px;
+gap: 16px;
+background: radial-gradient(#14134a,#141440,#0d0d2d, #0d0d2d, #0d0d2d);
+
+width: 100%;
+height: 300px;
+border-radius: 150px;
+left: calc(50% - 714px/2 + 0.5px);
+top: 3317px;
+
+}
+
+/* A pristine solitaire for every new chapter */
+.seventh-heading {
+width: 714px;
+height: 41px;
+
+font-family: 'Abhaya Libre Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 94%;
+/* or 41px */
+text-align: center;
+letter-spacing: -0.01em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* Every Tanishq diamond shines at 30 cents or above setting the benchmark for ages to come. */
+.seventh-para {
+width: 401px;
+height: 44px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #A2C4E2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.eight-container {
+  width: 941.31px;
+  height: 380px;
+  top: 3511px;
+  left: 197px;
+  gap: 62px;
+  justify-self: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
-.card {
-  border-radius: 20px;
+.eight-1 {
+  width: 252.87px;
+  height: 360px;
+  top: 9.78;
+  left: 9.78;
+  border-radius: 16px;
+  border: 1px;
+  background-color: #FFFFFF;
 }
 
-.card-para {
-  color: rgb(211, 149, 66);
-  font-family: bree serif;
-  font-size: 22px;
-  align-self: center;
- 
+.eight-image {
+  width: 214px;
+  height: 288px;
+  top: 498px;
+  left: 28px;
 }
 
-.card-image {
-  width: 250px;
-  height: 350px;
-  margin: 10px;
+.eight-text {
+  /* Rings */
+
+
+width: 131px;
+height: 22px;
+left: calc(50% - 131px/2 + 334.73px);
+top: 288px;
+
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 120%;
+/* identical to box height, or 22px */
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+align-items: center;
+justify-self: center;
+color: #7F6F60;
+
+
 }
